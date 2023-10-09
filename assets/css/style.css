@@ -7,9 +7,10 @@
 
 /* Body styling */
 body {
+    background-color: #f9f7f0;
     background: url('../images/hero.png') no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: right bottom;
     color: #25200e;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
@@ -17,3 +18,38 @@ body {
 }
 
 /* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 35px 100px;
+}
+
+.logo {
+    font-size: 30px;
+    color: #5169bd;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.logo:hover {
+    color: #9facdb;
+}
+
+nav a {
+    font-size: 16px;
+    color: #25200e;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+nav a:hover {
+    color: #9facdb;
+}
