@@ -8,13 +8,9 @@
 /* Body styling */
 body {
     background-color: #f9f7f0;
-    background: url('../images/hero.png') no-repeat;
-    background-size: contain;
-    background-position: right bottom;
     color: #25200e;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-
 }
 
 /* Header */
@@ -52,4 +48,32 @@ nav a {
 
 nav a:hover {
     color: #9facdb;
+}
+
+/* Hero */
+#Home {
+    display: flex;
+    height: calc(100vh - 35px);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    max-width: 650px;
+    height: auto;
+}
+
+.left {
+    width: 35%;
+}
+
+.left h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #9facdb;
+    text-transform: uppercase;
+}
+
+.left p {
+    line-height: 30px;
 }
