@@ -58,7 +58,7 @@ nav a:hover {
     justify-content: center;
 }
 
-.hero {
+.img-hero {
     max-width: 650px;
     height: auto;
 }
@@ -74,6 +74,29 @@ nav a:hover {
     text-transform: uppercase;
 }
 
+.left h1 span {
+    color: #5169bd;
+    font-style: italic;
+}
+
 .left p {
     line-height: 30px;
+}
+
+/* Meditation techniques */
+
+#Meditation {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction {
+    
+}
+
+video {
+    height: auto;
+    width: 100%;
 }
