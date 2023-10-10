@@ -278,7 +278,7 @@ video {
     width: 100%;
     padding: 15px 0;
     text-decoration: none;
-    background: #9facdb;
+    background: #5169bd;
     color: #fff;
     text-align: center;
     font-size: 1.1rem;
@@ -286,5 +286,15 @@ video {
 }
 
 .contact-container .form .submit a:hover {
-    background: #5169bd;
+    background: #9facdb;
+}
+
+/* Footer */
+
+.ul li a i .fa-brands {
+    color: #5169bd;
+}
+
+ul li a i .fa-brands:hover {
+    color: #9facdb;
 }
