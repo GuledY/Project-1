@@ -23,13 +23,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    background-color: #f5f1e5;
     align-items: center;
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 99;
     width: 100%;
-    padding: 35px 100px;
+    padding: 25px 100px;
 }
 
 .logo {
@@ -41,6 +42,15 @@ header {
 
 .logo:hover {
     color: #9facdb;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style-type: none;
 }
 
 nav a {
@@ -231,7 +241,8 @@ video {
 }
 
 .contact-container .form {
-    width: 45%;
+    width: 50%;
+    margin: 0 auto;
 
 }
 
@@ -315,3 +326,102 @@ footer {
     padding-right: 2rem;
     color: #5169bd;
 }
+
+/* Media queries */
+
+@media (max-width: 480px) {
+    /* Header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f5f1e5;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        width: 100%;
+        padding: 30px 50px;
+    }
+
+    .logo {
+        font-size: 24px;
+        color: #5169bd;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    .logo:hover {
+        color: #9facdb;
+    }
+
+    #menu {
+        font-size: 110%;
+        letter-spacing: 4px;
+        list-style-type: none;
+    }
+
+    #menu>li {
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 24px;
+        color: #25200e;
+        font-weight: 600;
+        text-decoration: none;
+        margin-left: 50px;
+    }
+
+    nav a:hover {
+        color: #9facdb;
+    }
+
+    /* Hero */
+    #Home {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-hero {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .left {
+        width: 80%;
+    }
+
+    .left h1 {
+        padding-top: 180px;
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: #9facdb;
+        text-transform: uppercase;
+    }
+
+    .left h1 span {
+        color: #5169bd;
+        font-style: italic;
+    }
+
+    .left p {
+        padding-top: 10px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1024px) {}
