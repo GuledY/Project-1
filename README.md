@@ -14,7 +14,7 @@ Next, go to the settings tab in the GitHub repo and find "Pages". Set the source
 
 Guided meditation via videos.
 
-![image of meditation video](/relative/path/to/feature 1.PNG?raw=true)
+![feature 1](https://github.com/GuledY/Project-1/assets/141145982/54a6e71d-4c6d-4617-bac0-d0d14d591816)
 
 Information on the importance of meditation.
 ![image of meditation video](/relative/path/to/feature 3.PNG?raw=true)
