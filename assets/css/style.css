@@ -53,7 +53,7 @@ nav a:hover {
 /* Hero */
 #Home {
     display: flex;
-    height: calc(100vh - 35px);
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -87,14 +87,82 @@ nav a:hover {
 
 #Meditation {
     display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
 }
 
 .introduction {
-    
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 4em;
+
 }
+
+.introduction h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #9facdb;
+    text-transform: uppercase;
+}
+
+.introduction h2 span {
+    color: #5169bd;
+    font-style: italic;
+}
+
+.introduction p {
+    line-height: 26px;
+}
+
+.meditation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+
+}
+
+.meditation-content-left {
+    width: 40%;
+    padding-right: 2em;
+}
+
+.meditation-content-left h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #9facdb;
+    text-transform: uppercase;
+}
+
+.meditation-content-left p {
+    line-height: 26px;
+}
+
+.meditation-content-left h2 span {
+    color: #5169bd;
+    font-style: italic;
+}
+
+.meditation-content-left p a {
+    color: #9facdb;
+    text-decoration: none;
+}
+
+.meditation-content-left p a:hover {
+    color: #5169bd;
+}
+
+.meditation-content-right {
+    max-width: 650px;
+    height: auto;
+    padding-right: 2em;
+}
+
+
 
 video {
     height: auto;
