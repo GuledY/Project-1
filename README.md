@@ -20,7 +20,7 @@ Information on the importance of meditation.
 ![feature 3](https://github.com/GuledY/Project-1/assets/141145982/755e99bb-02c1-4410-8368-c77377c3ba92)
 
 Contact form to learn more about meditation or request new features.
-![image of meditation video](/relative/path/to/feature 2.PNG?raw=true)
+![feature 2](https://github.com/GuledY/Project-1/assets/141145982/f1c644a7-09ec-4df5-ae58-c8d5e734d265)
 
 ## External code
 
