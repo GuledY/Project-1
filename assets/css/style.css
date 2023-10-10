@@ -340,7 +340,7 @@ footer {
 
 /* Media queries */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     /* Navigation */
     label.logo {
@@ -636,303 +636,306 @@ footer {
     .contact-container .right {
         display: none;
     }
+}
 
-    @media (max-width: 768px) {
+@media screen and (max-width:768px) {
 
-        /* Navigation */
-        label.logo {
-            font-size: 24px;
-            padding-left: 50px;
-        }
-
-        nav ul li a {
-            font-size: 16px;
-        }
-
-        .checkbtn {
-            display: block;
-        }
-
-        ul {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: #f5f1e5;
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-        }
-
-        nav ul li {
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
-        }
-
-        nav ul li a {
-            font-size: 20px;
-        }
-
-        a:hover {
-            color: #9facdb;
-        }
-
-        #check:checked~ul {
-            left: 0;
-        }
-
-        /* Hero */
-        #Home {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            padding-top: 55px;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-        }
-
-        .img-hero {
-            max-width: 350px;
-            height: auto;
-        }
-
-        .left {
-            width: 75vw;
-        }
-
-        .left h1 {
-            padding-top: 120px;
-            font-size: 20px;
-            letter-spacing: 2px;
-            color: #9facdb;
-            text-transform: uppercase;
-        }
-
-        .left h1 span {
-            color: #5169bd;
-            font-style: italic;
-        }
-
-        .left p {
-            padding-top: 10px;
-            line-height: 30px;
-            font-size: 14px;
-        }
-
-        /* Meditation techniques */
-
-        #Meditation {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            padding-top: 100px;
-            width: 65%;
-            margin: auto;
-            padding-left: 0;
-        }
-
-        .introduction {
-            width: 85vw;
-            padding-bottom: 4em;
-            margin: -3rem;
-
-        }
-
-        .introduction h2 {
-            font-size: 20px;
-            letter-spacing: 2px;
-            color: #9facdb;
-            text-transform: uppercase;
-        }
-
-        .introduction h2 span {
-            color: #5169bd;
-            font-style: italic;
-        }
-
-        .introduction p {
-            line-height: 25px;
-            font-size: 14px;
-        }
-
-        .meditation-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 3em;
-
-        }
-
-        .meditation-content-left {
-            width: 85vw;
-        }
-
-        .meditation-content-left h2 {
-            font-size: 20px;
-            letter-spacing: 2px;
-            color: #9facdb;
-            text-transform: uppercase;
-        }
-
-        .meditation-content-left p {
-            line-height: 26px;
-            font-size: 14px;
-        }
-
-        .meditation-content-left h2 span {
-            color: #5169bd;
-            font-style: italic;
-        }
-
-        .meditation-content-left p a {
-            color: #9facdb;
-            text-decoration: none;
-        }
-
-        .meditation-content-left p a:hover {
-            color: #5169bd;
-        }
-
-        .meditation-content-right {
-            max-width: 650px;
-            height: auto;
-            padding-right: 2em;
-        }
-
-        video {
-            height: auto;
-            width: 90%;
-        }
-
-        /* About Us */
-
-        #About {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            padding-top: 100px;
-            width: 80%;
-            margin: auto;
-        }
-
-        .about-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: 350px;
-            margin: 0 auto;
-            padding-bottom: 4em;
-        }
-
-        .about-container img {
-            height: 50%;
-            width: 80%;
-        }
-
-        .about-container h2 {
-            font-size: 20px;
-            letter-spacing: 2px;
-            color: #9facdb;
-            text-transform: uppercase;
-        }
-
-        .about-container p {
-            line-height: 26px;
-            font-size: 14px;
-        }
-
-        /* Footer/contact */
-
-        #social-links {
-            display: none;
-        }
-
-        #Contact {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            padding-top: 100px;
-            width: 100%;
-            margin: auto;
-        }
-
-        .contact-container {
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 0 auto;
-            align-items: center;
-
-        }
-
-        .contact-container .form {
-            width: 50%;
-            margin: 0 auto;
-
-        }
-
-        .contact-container .form h2 {
-            font-size: 1.5rem;
-            color: #9facdb;
-            padding-bottom: 10px;
-            width: 100%;
-        }
-
-        .contact-container .form .submit {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-
-        .contact-container .form .submit input,
-        .contact-container .form .submit textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #111;
-            outline: none;
-            margin: 13px 0;
-        }
-
-        .contact-container .form .submit input:focus,
-        .contact-container .form .submit textarea:focus {
-            border: 1px solid #5169bd;
-        }
-
-        .contact-container .form .submit input::placeholder {
-            color: #25200e;
-            font-size: 0.8rem;
-        }
-
-        .contact-container .form .submit textarea::placeholder {
-            color: #25200e;
-            font-size: 0.8rem;
-            height: 80%;
-        }
-
-        .contact-container .form .submit a {
-            width: 100%;
-            padding: 15px 0;
-            text-decoration: none;
-            background: #5169bd;
-            color: #fff;
-            text-align: center;
-            font-size: 1rem;
-            margin: 13px 0;
-        }
-
-        .contact-container .form .submit a:hover {
-            background: #9facdb;
-        }
-
-        .contact-container .right {
-            display: none;
-        }
+    /* Navigation */
+    label.logo {
+        font-size: 28px;
+        padding-left: 50px;
     }
 
-    @media (max-width: 1024px) {}
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f5f1e5;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 28px;
+    }
+
+    a:hover {
+        color: #9facdb;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    /* Hero */
+    #Home {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 55px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .img-hero {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .left {
+        width: 75vw;
+    }
+
+    .left h1 {
+        padding-top: 120px;
+        font-size: 28px;
+        letter-spacing: 2px;
+        color: #9facdb;
+        text-transform: uppercase;
+    }
+
+    .left h1 span {
+        color: #5169bd;
+        font-style: italic;
+    }
+
+    .left p {
+        padding-top: 10px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    /* Meditation techniques */
+
+    #Meditation {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: 100px;
+        width: 65%;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    .introduction {
+        width: 85vw;
+        padding-bottom: 4em;
+        margin-left: -4.7rem;
+
+    }
+
+    .introduction h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #9facdb;
+        text-transform: uppercase;
+    }
+
+    .introduction h2 span {
+        color: #5169bd;
+        font-style: italic;
+    }
+
+    .introduction p {
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    .meditation-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3em;
+
+    }
+
+    .meditation-content-left {
+        width: 85vw;
+    }
+
+    .meditation-content-left h2 {
+        font-size: 26px;
+        letter-spacing: 2px;
+        color: #9facdb;
+        text-transform: uppercase;
+    }
+
+    .meditation-content-left p {
+        line-height: 26px;
+        font-size: 14px;
+    }
+
+    .meditation-content-left h2 span {
+        color: #5169bd;
+        font-style: italic;
+    }
+
+    .meditation-content-left p a {
+        color: #9facdb;
+        text-decoration: none;
+    }
+
+    .meditation-content-left p a:hover {
+        color: #5169bd;
+    }
+
+    .meditation-content-right {
+        max-width: 650px;
+        height: auto;
+        padding-right: 2em;
+    }
+
+    video {
+        height: auto;
+        width: 90%;
+    }
+
+    /* About Us */
+
+    #About {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: 100px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 4em;
+    }
+
+    .about-container img {
+        height: 50%;
+        width: 80%;
+    }
+
+    .about-container h2 {
+        font-size: 26px;
+        letter-spacing: 2px;
+        color: #9facdb;
+        text-transform: uppercase;
+    }
+
+    .about-container p {
+        line-height: 26px;
+        font-size: 14px;
+    }
+
+    /* Footer/contact */
+
+    #social-links {
+        display: none;
+    }
+
+    #Contact {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: 100px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-container {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+
+    }
+
+    .contact-container .form {
+        width: 65%;
+        margin: 0 auto;
+
+    }
+
+    .contact-container .form h2 {
+        font-size: 2rem;
+        color: #9facdb;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .contact-container .form .submit {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contact-container .form .submit input,
+    .contact-container .form .submit textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #111;
+        outline: none;
+        margin: 13px 0;
+    }
+
+    .contact-container .form .submit input:focus,
+    .contact-container .form .submit textarea:focus {
+        border: 1px solid #5169bd;
+    }
+
+    .contact-container .form .submit input::placeholder {
+        color: #25200e;
+        font-size: 0.8rem;
+    }
+
+    .contact-container .form .submit textarea::placeholder {
+        color: #25200e;
+        font-size: 0.8rem;
+        height: 80%;
+    }
+
+    .contact-container .form .submit a {
+        width: 100%;
+        padding: 15px 0;
+        text-decoration: none;
+        background: #5169bd;
+        color: #fff;
+        text-align: center;
+        font-size: 1rem;
+        margin: 13px 0;
+    }
+
+    .contact-container .form .submit a:hover {
+        background: #9facdb;
+    }
+
+    .contact-container .right {
+        display: none;
+    }
+
+    footer p {
+        padding: 0;
+    }
+}
