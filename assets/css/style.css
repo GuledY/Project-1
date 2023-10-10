@@ -291,10 +291,27 @@ video {
 
 /* Footer */
 
-.ul li a i .fa-brands {
-    color: #5169bd;
+footer {
+    text-align: center;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
-ul li a i .fa-brands:hover {
+#social-links {
+    display: flex;
+    list-style-type: none;
+}
+
+#social-links i {
+    font-size: 160%;
+    padding-right: 2rem;
     color: #9facdb;
+}
+
+#social-links i:hover {
+    font-size: 160%;
+    padding-right: 2rem;
+    color: #5169bd;
 }
