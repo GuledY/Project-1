@@ -17,7 +17,7 @@ Guided meditation via videos.
 ![feature 1](https://github.com/GuledY/Project-1/assets/141145982/54a6e71d-4c6d-4617-bac0-d0d14d591816)
 
 Information on the importance of meditation.
-![image of meditation video](/relative/path/to/feature 3.PNG?raw=true)
+![feature 3](https://github.com/GuledY/Project-1/assets/141145982/755e99bb-02c1-4410-8368-c77377c3ba92)
 
 Contact form to learn more about meditation or request new features.
 ![image of meditation video](/relative/path/to/feature 2.PNG?raw=true)
