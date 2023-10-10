@@ -2,7 +2,10 @@
 * {
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style-type: none;
     box-sizing: border-box;
+
 }
 
 /* Smooth Scrolling */
@@ -20,19 +23,6 @@ body {
 
 /* Header */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f5f1e5;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-    padding: 25px 100px;
-}
-
 .logo {
     font-size: 30px;
     color: #5169bd;
@@ -44,25 +34,44 @@ header {
     color: #9facdb;
 }
 
+nav {
+    background-color: #f5f1e5;
+    height: 90px;
+
+}
+
 nav ul {
-    display: flex;
-    flex-direction: row;
+    float: right;
 }
 
 nav ul li {
     list-style-type: none;
+    display: inline-block;
 }
 
-nav a {
+nav ul li a {
     font-size: 16px;
     color: #25200e;
     font-weight: 600;
     text-decoration: none;
     margin-left: 50px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
     color: #9facdb;
+}
+
+.check-box {
+    font-size: 30px;
+    color: #5169bd;
+    float: right;
+    line-height: 70px;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 /* Hero */
@@ -332,55 +341,44 @@ footer {
 @media (max-width: 480px) {
     /* Header */
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        background-color: #f5f1e5;
-        align-items: center;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        width: 100%;
-        padding: 30px 50px;
-    }
-
     .logo {
         font-size: 24px;
         color: #5169bd;
         text-decoration: none;
         font-weight: 800;
+
     }
 
     .logo:hover {
         color: #9facdb;
     }
 
-    #menu {
-        font-size: 110%;
-        letter-spacing: 4px;
-        list-style-type: none;
+    nav ul li a {
+        font-size: 20px;
     }
 
-    #menu>li {
-        margin-bottom: 1em;
+    .check-box {
+        display: block;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
+    nav ul li {
+        display: block;
+
     }
 
-    nav a {
-        font-size: 24px;
-        color: #25200e;
-        font-weight: 600;
-        text-decoration: none;
-        margin-left: 50px;
+    header {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f5f1e5;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+
     }
 
-    nav a:hover {
-        color: #9facdb;
+    #check:checked~ul {
+        left: 0;
     }
 
     /* Hero */
@@ -420,8 +418,7 @@ footer {
         line-height: 30px;
         font-size: 18px;
     }
-}
 
-@media (max-width: 768px) {}
+    @media (max-width: 768px) {}
 
-@media (max-width: 1024px) {}
+    @media (max-width: 1024px) {}
